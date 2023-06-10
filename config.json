@@ -1,0 +1,178 @@
+{
+  "folderStructure": {
+    "resources": "./resources/",
+    "data": "./data/",
+    "packets": "./packets/",
+    "scripts": "resources:Scripts/",
+    "plugins": "./plugins/"
+  },
+  "databaseInfo": {
+    "server": {
+      "connectionUri": "mongodb://localhost:27017",
+      "collection": "grasscutter"
+    },
+    "game": {
+      "connectionUri": "mongodb://localhost:27017",
+      "collection": "grasscutter"
+    }
+  },
+  "language": {
+    "language": "zh_CN",
+    "fallback": "en_US",
+    "document": "EN"
+  },
+  "account": {
+    "autoCreate": true,
+    "EXPERIMENTAL_RealPassword": false,
+    "defaultPermissions": ["*"],
+    "maxPlayer": -1
+  },
+  "server": {
+    "debugWhitelist": [],
+    "debugBlacklist": [],
+    "runMode": "HYBRID",
+    "logCommands": false,
+    "http": {
+      "bindAddress": "0.0.0.0",
+      "bindPort": 443,
+      "accessAddress": "127.0.0.1",
+      "accessPort": 0,
+      "encryption": {
+        "useEncryption": true,
+        "useInRouting": true,
+        "keystore": "./keystore.p12",
+        "keystorePassword": "123456"
+      },
+      "policies": {
+        "cors": {
+          "enabled": false,
+          "allowedOrigins": [
+            "*"
+          ]
+        }
+      },
+      "files": {
+        "indexFile": "./index.html",
+        "errorFile": "./404.html"
+      }
+    },
+    "game": {
+      "bindAddress": "0.0.0.0",
+      "bindPort": 22102,
+      "accessAddress": "127.0.0.1",
+      "accessPort": 0,
+      "loadEntitiesForPlayerRange": 300,
+      "enableScriptInBigWorld": true,
+      "enableConsole": true,
+      "kcpInterval": 20,
+      "logPackets": "NONE",
+      "isShowPacketPayload": false,
+      "isShowLoopPackets": false,
+      "cacheSceneEntitiesEveryRun": false,
+      "gameOptions": {
+        "inventoryLimits": {
+          "weapons": 2000,
+          "relics": 2000,
+          "materials": 2000,
+          "furniture": 2000,
+          "all": 30000
+        },
+        "avatarLimits": {
+          "singlePlayerTeam": 4,
+          "multiplayerTeam": 4
+        },
+        "sceneEntityLimit": 1000,
+        "watchGachaConfig": false,
+        "enableShopItems": true,
+        "staminaUsage": true,
+        "energyUsage": true,
+        "fishhookTeleport": true,
+        "questing": true,
+        "resinOptions": {
+          "resinUsage": false,
+          "cap": 160,
+          "rechargeTime": 480
+        },
+        "rates": {
+          "adventureExp": 1.0,
+          "mora": 1.0,
+          "leyLines": 1.0
+        }
+      },
+      "joinOptions": {
+        "welcomeEmotes": [
+          2007,
+          1002,
+          4010
+        ],
+        "welcomeMessage": "绮良良",
+        "welcomeMail": {
+          "title": "喵~",
+          "content": "欢迎新玩家加入，完全免费！注册就有全部权限，开局送648，快去玩吧！！",
+          "sender": "绮良良",
+          "items": [
+            {
+              "itemId": 1202,
+              "itemCount": 1,
+              "itemLevel": 1
+            },
+            {
+              "itemId": 1035,
+              "itemCount": 1,
+              "itemLevel": 1
+            },
+            {
+              "itemId": 201,
+              "itemCount": 12960,
+              "itemLevel": 1
+            }
+          ]
+        }
+      },
+      "serverAccount": {
+        "avatarId": 10000061,
+        "nameCardId": 210162,
+        "adventureRank": 60,
+        "worldLevel": 10,
+        "nickName": "绮良良",
+        "signature": "绮良良就是我啦，喵~ ~"
+      }
+    },
+    "dispatch": {
+      "regions": [
+        {
+          "Name": "3.7",
+          "Title": "\u003ccolor\u003d#FF0000\u003e游\u003c/color\u003e\u003ccolor\u003d#FF7F00\u003e戏\u003c/color\u003e\u003ccolor\u003d#FFFF00\u003e\u003c/color\u003e\u003ccolor\u003d#00FF00\u003e\u003c/color\u003e\u003ccolor\u003d#00FFFF\u003e\u003c/color\u003e\u003ccolor\u003d#0000FF\u003e\u003c/color\u003e",
+          "Ip": "127.0.0.1",
+          "Port": 22102
+        },
+        {
+          "Name": "1",
+          "Title": "~",
+          "Ip": "127.0.0.1",
+          "Port": 22102
+        }
+      ]
+    },
+    "dispatch": {
+      "regions": [],
+      "defaultName": "server",
+      "logRequests": "NONE"
+    },
+    "debugMode": {
+      "serverLoggerLevel": {
+        "levelInt": 10000,
+        "levelStr": "DEBUG"
+      },
+      "servicesLoggersLevel": {
+        "levelInt": 20000,
+        "levelStr": "INFO"
+      },
+      "logPackets": "ALL",
+      "isShowPacketPayload": false,
+      "isShowLoopPackets": false,
+      "logRequests": "ALL"
+    }
+  },
+  "version": 4
+}
