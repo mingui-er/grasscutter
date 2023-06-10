@@ -17,4 +17,4 @@ The local server server of a two-dimensional game
 # 7.启动某个二次元游戏
 # 8.输入用户名 密码随便输
 # 9.在下面的链接进行下载 指令工具
-https://github.com/jie65535/GrasscutterCommandGenerator/releases/tag/v1.10.0
+[GM下载](https://github.com/jie65535/GrasscutterCommandGenerator/releases/tag/v1.10.0)
