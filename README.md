@@ -6,18 +6,18 @@ The local server server of a two-dimensional game
 # 2.安装mongdb mongodb-windows-x86_64-5.0.9  或 以上版本
 *https://www.mongodb.com/try/download/community*
 # 3.安装fidder
-(https://www.telerik.com/download/fiddler）
+*https://www.telerik.com/download/fiddler*
 # 4.启动mongdb服务
 # 5.启动Fidder服务
 打开后点击fiddlerScript
 里面内容全选然后吧下面这些粘进去
 
-/* Original script by NicknameGG, modified for Grasscutter by contributors. */
-import System;
-import System.Windows.Forms;
-import Fiddler;
-import System.Text.RegularExpressions;
-var list = [
+>/* Original script by NicknameGG, modified for Grasscutter by contributors. */
+>import System;
+>import System.Windows.Forms;
+>import Fiddler;
+>import System.Text.RegularExpressions;
+>var list = [
     "https://api-os-takumi.mihoyo.com/",
     "https://hk4e-api-os-static.mihoyo.com/",
     "https://hk4e-sdk-os.mihoyo.com/",
@@ -43,7 +43,7 @@ var list = [
     "https://api-account-os.hoyoverse.com/",
     "https://hk4e-sdk-os.hoyoverse.com/" // Line 24
     ];
-class Handlers
+>class Handlers
 {
     static function OnBeforeRequest(oS: Session) {
         var active = true;
